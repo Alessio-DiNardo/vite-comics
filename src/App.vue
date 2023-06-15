@@ -1,20 +1,24 @@
 <script>
-  import AppHeader from './components/AppHeader.vue';
-  import FooterUpper from './components/FooterUpper.vue'
+  import HeaderUpper from './components/HeaderUpper.vue';
+  import HeaderUnder from './components/HeaderUnder.vue';
+  import FooterUpper from './components/FooterUpper.vue';
   import FooterUnder from './components/FooterUnder.vue';
+  
   export default {
     name: 'App',
     components: {
-      AppHeader,
+      HeaderUpper,
+      HeaderUnder,
       FooterUpper,
-      FooterUnder
+      FooterUnder,
 
     }
   }
 </script>
 
 <template>
-  <AppHeader/>
+  <HeaderUpper/>
+  <HeaderUnder/>
   <FooterUpper/>
   <FooterUnder/>
 </template>

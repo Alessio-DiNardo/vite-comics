@@ -7,9 +7,15 @@
 </template>
 <script>
 export default {
-    name: 'FooterUnder'
+    name: 'FooterUnder',
+    data(){
+        return{
+
+        }
+    }
 }
 </script>
 <style lang="scss" scoped>
-    
+    @use '../styles/partials/mixins';
+    @use '../styles/partials/variables';
 </style>

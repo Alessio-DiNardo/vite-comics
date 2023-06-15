@@ -1,13 +1,16 @@
 <template>
     <div>
-        <h1>FooterUpper</h1>
+        <h1>
+            headerUnder
+        </h1>
     </div>
 </template>
 
 
 <script>
+
 export default {
-    name: 'FooterUpper',
+    name: 'HeaderUnder',
     data(){
         return{
 
