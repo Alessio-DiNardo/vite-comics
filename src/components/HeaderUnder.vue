@@ -1,8 +1,10 @@
 <template>
-    <div>
-        <h1>
-            headerUnder
-        </h1>
+    <div class="bg-black">
+        <div class="container">
+            <h1>
+            ->> Content goes here 
+            </h1>
+        </div>
     </div>
 </template>
 
@@ -23,4 +25,15 @@ export default {
 <style lang="scss" scoped>
     @use '../styles/partials/mixins' as*;
     @use '../styles/partials/variables' as*;
+
+    div.bg-black{
+        background-color: $secondbgColor;
+        height: 115px;
+    }
+
+    h1{
+        color: $thirdColor;
+        font-size: 2rem;
+        padding-top: 2rem;
+    }
 </style>
