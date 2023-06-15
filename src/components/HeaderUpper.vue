@@ -1,8 +1,6 @@
 <template>
-    <div>
-        <h1>
-            headerUpper
-        </h1>
+    <div class="background">
+        <h1>ciao</h1>
     </div>
 </template>
 
@@ -23,4 +21,8 @@ export default {
 <style lang="scss" scoped>
     @use '../styles/partials/mixins';
     @use '../styles/partials/variables';
+    
+    h1{
+        color: $primaryColor;
+    }
 </style>
