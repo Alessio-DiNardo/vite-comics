@@ -3,35 +3,8 @@
         <img src="../assets/dc-logo.png" alt="">
         <nav>
             <ul class="flex">
-                <li class="active">
-                    ciao
-                </li>
-                <li>
-                    ciao
-                </li>
-                <li>
-                    ciao
-                </li>
-                <li>
-                    ciao
-                </li>
-                <li>
-                    ciao
-                </li>
-                <li>
-                    ciao
-                </li>
-                <li>
-                    ciao
-                </li>
-                <li>
-                    ciao
-                </li>
-                <li>
-                    ciao
-                </li>
-                <li>
-                    ciao
+                <li v-for="link in navbarLinks">
+                    {{link.text}}
                 </li>
             </ul>
         </nav>
@@ -45,7 +18,48 @@ export default {
     name: 'HeaderUpper',
     data(){
         return{
-
+            navbarLinks :[
+                {
+                    text: 'characters',
+                    active: false,
+                },
+                {
+                    text: 'comics',
+                    active: true,
+                },
+                {
+                    text: 'movies',
+                    active: false,
+                },
+                {
+                    text: 'tv',
+                    active: false,
+                },
+                {
+                    text: 'games',
+                    active: false,
+                },
+                {
+                    text: 'collectibles',
+                    active: false,
+                },
+                {
+                    text: 'videos',
+                    active: false,
+                },
+                {
+                    text: 'fans',
+                    active: false,
+                },
+                {
+                    text: 'news',
+                    active: false,
+                },
+                {
+                    text: 'shop',
+                    active: false,
+                },
+            ]
         }
     }
 }
