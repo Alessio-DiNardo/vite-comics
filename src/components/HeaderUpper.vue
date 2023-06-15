@@ -3,17 +3,36 @@
         <img src="../assets/dc-logo.png" alt="">
         <nav>
             <ul class="flex">
-                <li>ciao</li>
-                <li>ciao</li>
-                <li>ciao</li>
-                <li>ciao</li>
-                <li>ciao</li>
-                <li>ciao</li>
-                <li>ciao</li>
-                <li>ciao</li>
-                <li>ciao</li>
-
-
+                <li class="active">
+                    ciao
+                </li>
+                <li>
+                    ciao
+                </li>
+                <li>
+                    ciao
+                </li>
+                <li>
+                    ciao
+                </li>
+                <li>
+                    ciao
+                </li>
+                <li>
+                    ciao
+                </li>
+                <li>
+                    ciao
+                </li>
+                <li>
+                    ciao
+                </li>
+                <li>
+                    ciao
+                </li>
+                <li>
+                    ciao
+                </li>
             </ul>
         </nav>
     </div>
@@ -38,7 +57,16 @@ export default {
     @use '../styles/partials/variables' as*;
     
     nav{
-    padding-top: 2.5rem;
+        padding-top: 2.5rem;
 
 }
+
+    li{
+        padding: 0 2rem 0 2rem;
+
+        &.active,
+        &:hover{
+            color: $primaryColor;
+        }
+    }
 </style>
