@@ -3,7 +3,7 @@
         <img src="../assets/dc-logo.png" alt="">
         <nav>
             <ul class="flex">
-                <li v-for="link in navbarLinks">
+                <li v-for="link in navbarLinks" :class="link.active ? active : ''">
                     {{link.text}}
                 </li>
             </ul>
@@ -21,43 +21,43 @@ export default {
             navbarLinks :[
                 {
                     text: 'characters',
-                    active: false,
+                    active: false
                 },
                 {
                     text: 'comics',
-                    active: true,
+                    active: true
                 },
                 {
                     text: 'movies',
-                    active: false,
+                    active: false
                 },
                 {
                     text: 'tv',
-                    active: false,
+                    active: false
                 },
                 {
                     text: 'games',
-                    active: false,
+                    active: false
                 },
                 {
                     text: 'collectibles',
-                    active: false,
+                    active: false
                 },
                 {
                     text: 'videos',
-                    active: false,
+                    active: false
                 },
                 {
                     text: 'fans',
-                    active: false,
+                    active: false
                 },
                 {
                     text: 'news',
-                    active: false,
+                    active: false
                 },
                 {
                     text: 'shop',
-                    active: false,
+                    active: false
                 },
             ]
         }
@@ -73,7 +73,7 @@ export default {
     nav{
         padding-top: 2.5rem;
 
-}
+    }
 
     li{
         padding: 0 2rem 0 2rem;
@@ -82,5 +82,11 @@ export default {
         &:hover{
             color: $primaryColor;
         }
+    }
+
+    img{
+        padding: 0.75rem 0;
+        width: 90px;
+
     }
 </style>
