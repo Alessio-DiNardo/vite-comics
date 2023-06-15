@@ -1,6 +1,21 @@
 <template>
-    <div class="background">
-        <h1>ciao</h1>
+    <div class="container">
+        <img src="../assets/dc-logo.png" alt="">
+        <nav>
+            <ul class="flex">
+                <li>ciao</li>
+                <li>ciao</li>
+                <li>ciao</li>
+                <li>ciao</li>
+                <li>ciao</li>
+                <li>ciao</li>
+                <li>ciao</li>
+                <li>ciao</li>
+                <li>ciao</li>
+
+
+            </ul>
+        </nav>
     </div>
 </template>
 
@@ -19,10 +34,11 @@ export default {
 
 
 <style lang="scss" scoped>
-    @use '../styles/partials/mixins';
-    @use '../styles/partials/variables';
+    @use '../styles/partials/mixins' as*;
+    @use '../styles/partials/variables' as*;
     
-    h1{
-        color: $primaryColor;
-    }
+    nav{
+    padding-top: 2.5rem;
+
+}
 </style>
