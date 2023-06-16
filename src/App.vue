@@ -1,5 +1,6 @@
 <script>
   import HeaderUpper from './components/HeaderUpper.vue';
+  import AppJumbo from './components/AppJumbo.vue';
   import HeaderUnder from './components/HeaderUnder.vue';
   import AppMain from './components/AppMain.vue';
   import FooterUpper from './components/FooterUpper.vue';
@@ -9,6 +10,7 @@
     name: 'App',
     components: {
       HeaderUpper,
+      AppJumbo,
       HeaderUnder,
       AppMain,
       FooterUpper,
@@ -20,6 +22,7 @@
 
 <template>
   <HeaderUpper/>
+  <AppJumbo/>
   <HeaderUnder/>
   <AppMain/>
   <FooterUpper/>
