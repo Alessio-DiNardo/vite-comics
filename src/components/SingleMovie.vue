@@ -1,10 +1,16 @@
 <template>
-    <h2>SingleMovie</h2>
+    {{ img}}
 </template>
 
 <script>
 export default {
-    name:'SingleMovie'
+    name:'SingleMovie',
+    props: [
+        'img',
+        'price',
+        'series',
+        'type'
+    ]
 }
 </script>
 
