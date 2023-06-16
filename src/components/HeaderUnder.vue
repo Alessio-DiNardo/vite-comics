@@ -5,18 +5,21 @@
             ->> Content goes here 
             </h1>
         </div>
+        <SingleMovie/>
     </div>
 </template>
 
 
 <script>
+import SingleMovie from './components/SingleMovie.vue';
 
 export default {
-    name: 'HeaderUnder',
-    data(){
-        return{
-
-        }
+    name: "HeaderUnder",
+    data() {
+        return {};
+    },
+    components: {
+        SingleMovie
     }
 }
 </script>
