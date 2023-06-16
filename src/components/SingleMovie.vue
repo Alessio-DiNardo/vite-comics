@@ -1,6 +1,6 @@
 <template>
-    <div class="movie">
-        {{img}}
+    <div class="Card">
+        <img :src="img" alt="">
     </div>
 </template>
 
@@ -11,7 +11,8 @@ export default {
         'img',
         'price',
         'series',
-        'type'
+        'type',
+        
     ]
 }
 </script>

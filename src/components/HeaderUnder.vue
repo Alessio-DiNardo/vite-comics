@@ -3,12 +3,14 @@
         <div class="container">
             <div class="movie">
                 <SingleMovie v-for="movie in movies"
-                    :img ='movie.thumb'
-                    :price ='movie.price'
-                    :series ='movie.series'
-                    :type ='movie.type'
+                    :img ="movie.thumb"
+                    :price ="movie.price"
+                    :series ="movie.series"
+                    :type ="movie.type"
+                    
                 />
             </div>
+
         </div>
     </div>
 </template>
