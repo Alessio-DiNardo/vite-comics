@@ -1,14 +1,15 @@
 <template>
     <div class="bg-black">
         <div class="container">
-            <div class="movie">
-                <SingleMovie v-for="movie in movies"
-                    :img ="movie.thumb"
-                    :price ="movie.price"
-                    :series ="movie.series"
-                    :type ="movie.type"
-                    
-                />
+            <div class="card">
+                <div class="movie">
+                    <SingleMovie v-for="movie in movies"
+                        :img ="movie.thumb"
+                        :price ="movie.price"
+                        :series ="movie.series"
+                        :type ="movie.type"
+                        />
+                </div>
             </div>
 
         </div>
@@ -112,12 +113,22 @@ export default {
 
     div.bg-black{
         background-color: $secondbgColor;
-        height: 115px;
+        
     }
 
     h1{
         color: $thirdColor;
         font-size: 2rem;
         padding-top: 2rem;
+    }
+
+    div.movie{
+        display: flex;
+        width: 50px;
+        flex-wrap: wrap;
+
+        img{
+            width: 50px;
+        }
     }
 </style>
