@@ -1,5 +1,7 @@
 <template>
-    {{ img}}
+    <div class="movie">
+        {{img}}
+    </div>
 </template>
 
 <script>
