@@ -1,5 +1,5 @@
 <template>
-
+    <h2>SingleMovie</h2>
 </template>
 
 <script>

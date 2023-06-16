@@ -1,17 +1,14 @@
 <template>
     <div class="bg-black">
         <div class="container">
-            <h1>
-            ->> Content goes here 
-            </h1>
+            <SingleMovie/>
         </div>
-        <SingleMovie/>
     </div>
 </template>
 
 
 <script>
-import SingleMovie from './components/SingleMovie.vue';
+import SingleMovie from './SingleMovie.vue';
 
 export default {
     name: "HeaderUnder",
