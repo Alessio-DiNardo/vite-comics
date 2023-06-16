@@ -1,5 +1,5 @@
 <template>
-        <div class="Card">
+        <div class="card">
             <div class="movie">
                 <img :src="img" alt="">
             </div>

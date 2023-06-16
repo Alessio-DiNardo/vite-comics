@@ -2,14 +2,12 @@
     <div class="bg-black">
         <div class="container">
             <div class="card">
-                <div class="movie">
                     <SingleMovie v-for="movie in movies"
                         :img ="movie.thumb"
                         :price ="movie.price"
                         :series ="movie.series"
                         :type ="movie.type"
                         />
-                </div>
             </div>
 
         </div>
@@ -122,13 +120,15 @@ export default {
         padding-top: 2rem;
     }
 
-    div.movie{
+    div.card{
         display: flex;
-        width: 50px;
+        width: calc(100% / 6);
         flex-wrap: wrap;
 
         img{
             width: 50px;
         }
     }
+
+
 </style>
